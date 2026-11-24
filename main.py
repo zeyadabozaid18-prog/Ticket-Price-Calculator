@@ -9,4 +9,7 @@ if membership == "Yes" :
 else:
     price = price
 
+if price > 1000 and membership == "No":
+    price = price - (0.2*price)
+
 print("price of ticket is ", price)
